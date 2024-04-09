@@ -11,11 +11,11 @@ export class ClickerComponent {
 
   constructor(public dataService: DataServiceService){}
 
-  qtdBatatas: number = 0;
+  qtdBatatasClick: number = 0;
+  qtdBatatasBps: number = 0;
+  totalBatatas: number = 0;
 
   ngOnInit(): void {
-    console.log("ola");
-    console.log(this.dataService.variavelCompartilhada);
     // Inicia a execução da função constantemente
     setInterval(() => {
       this.somarBps();
@@ -23,10 +23,23 @@ export class ClickerComponent {
   }
 
   maisBatata(){
-    this.qtdBatatas += 1;
+    if(this.dataService.varUpg == false){
+      this.qtdBatatasClick += 1;
+    } else{
+      this.dataService.variavelCompBatata += 1;
+    }
+
+    console.log("qtdBatatasClick: " + this.qtdBatatasClick)
+    console.log("dataService: " + this.dataService.variavelCompBatata)
   }
 
   somarBps(){
-    this.qtdBatatas += this.dataService.variavelCompartilhada;
+    this.dataService.variavelCompBatata += this.dataService.variavelCompBps;
+  }
+
+  envBatatas(){
+    if(this.dataService.varUpg == false){
+      this.dataService.variavelCompBatata = this.qtdBatatasClick;
+    }
   }
 }

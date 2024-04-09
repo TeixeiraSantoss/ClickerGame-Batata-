@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ClickerComponent } from './clicker/clicker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpgComponent } from './upg/upg.component';
+import { BpsComponent } from './bps/bps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickerComponent,
-    UpgComponent
+    UpgComponent,
+    BpsComponent
   ],
   imports: [
     BrowserModule,

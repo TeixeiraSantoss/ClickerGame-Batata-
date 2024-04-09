@@ -1,9 +1,9 @@
 <div class="container text-center p-">
     <h1>Clicker Game</h1>
-    <p>bps: {{dataService.variavelCompartilhada}}</p>    
-    <h2>Batatas: {{qtdBatatas}}</h2>
+    <p>bps: {{dataService.variavelCompBps}}</p>    
+    <h2>Batatas: {{dataService.variavelCompBatata.toFixed(0)}}</h2>
     
-    <button class="m-5" (click)="maisBatata()">
+    <button class="m-5" (click)="maisBatata(); envBatatas()">
         Batata
     </button>
 </div>

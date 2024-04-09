@@ -7,5 +7,8 @@ export class DataServiceService {
 
   constructor() { }
 
-  variavelCompartilhada: number = 0;
+  variavelCompBps: number = 0;
+  variavelCompBatata: number = 0;
+  varUpg: boolean = false;
+
 }

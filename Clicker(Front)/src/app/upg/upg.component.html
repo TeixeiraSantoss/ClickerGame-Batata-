@@ -3,9 +3,9 @@
         Upgrades
     </h2>
         <div class="container">
-            <button class="btn btn-light btn-sm" (click)="buyFazendeiro(); envBpm()">
+            <button class="btn btn-light btn-sm" (click)="buyFazendeiro(); envBps()">
                 <h5>
-                   Fazendeiro: {{fazendeiro}}
+                   Fazendeiro: {{fazendeiro}} Custo: {{valorFazendeiro.toFixed(0)}}
                 </h5>
             </button>
                 <p>
@@ -14,9 +14,9 @@
                 <p>Bps: {{bpsFazendeiro}}</p>
         </div>
         <div class="container">
-            <button class="btn btn-light btn-sm" (click)="buyColheitadeira(); envBpm()">
+            <button class="btn btn-light btn-sm" (click)="buyColheitadeira(); envBps()">
                 <h5>
-                    Colheitadeira: {{colheitadeira}}
+                    Colheitadeira: {{colheitadeira}} Custo: {{valorColheitadeira.toFixed(0)}}
                 </h5>
             </button>
                 <p>
