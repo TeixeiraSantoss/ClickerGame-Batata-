@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>
+        Upgrades
+    </h2>
+        <div class="container">
+            <button class="btn btn-light btn-sm" (click)="buyFazendeiro(); envBpm()">
+                <h5>
+                   Fazendeiro: {{fazendeiro}}
+                </h5>
+            </button>
+                <p>
+                    O fazendeiro vai plantar e colher batatas sozinho - aumenta 1bps(batatas por segundo)
+                </p>
+                <p>Bps: {{bpsFazendeiro}}</p>
+        </div>
+        <div class="container">
+            <button class="btn btn-light btn-sm" (click)="buyColheitadeira(); envBpm()">
+                <h5>
+                    Colheitadeira: {{colheitadeira}}
+                </h5>
+            </button>
+                <p>
+                    A Colheitadeira vai fazer a colheita das bastatas mais rapido - aumenta 5bps(batatas por segundo)
+                </p>
+                <p>Bps: {{bpsColheitadeira}}</p>
+        </div>
+</div>

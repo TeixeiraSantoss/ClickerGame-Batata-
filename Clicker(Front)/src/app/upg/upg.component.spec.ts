@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpgradesComponent } from './upgrades.component';
+import { UpgComponent } from './upg.component';
 
-describe('UpgradesComponent', () => {
-  let component: UpgradesComponent;
-  let fixture: ComponentFixture<UpgradesComponent>;
+describe('UpgComponent', () => {
+  let component: UpgComponent;
+  let fixture: ComponentFixture<UpgComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [UpgradesComponent]
+      declarations: [UpgComponent]
     });
-    fixture = TestBed.createComponent(UpgradesComponent);
+    fixture = TestBed.createComponent(UpgComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

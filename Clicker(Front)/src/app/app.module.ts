@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClickerComponent } from './clicker/clicker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UpgradesComponent } from './upgrades/upgrades.component';
+import { UpgComponent } from './upg/upg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickerComponent,
-    UpgradesComponent
+    UpgComponent
   ],
   imports: [
     BrowserModule,
