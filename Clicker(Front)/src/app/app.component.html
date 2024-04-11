@@ -1,5 +1,14 @@
 <div>
+
   <app-clicker></app-clicker>
-  <app-upg></app-upg>
+  
+  <div class="container">
+    <tabset>
+      <tab heading="Upgrades" id="tab1"><app-upg></app-upg></tab>
+      <tab heading="Estatisticas">Aqui ficaram as Estatisticas do jogo</tab>
+    </tabset>
+  </div>
+
   <router-outlet></router-outlet>
+
 </div>

@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { ClickerComponent } from './clicker/clicker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpgComponent } from './upg/upg.component';
-import { BpsComponent } from './bps/bps.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickerComponent,
-    UpgComponent,
-    BpsComponent
+    UpgComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

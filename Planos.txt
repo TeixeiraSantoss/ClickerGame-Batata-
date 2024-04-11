@@ -1,0 +1,13 @@
+Proximos passos:
+Criar um menu com as estatisticas do jogo
+	- Quantidade de clickes.
+	- Batatas geradas.
+	- Quantidade de Upgrades.
+	- Quais Upgrades foram comprados.
+	- Total de batatas geradas por BPS.
+	- Quantidade de BPS gerado por cada upgrade e porcentagem 
+	  em relação ao total de Batatas.
+	- Batatas geradas por Clicke
+	- Upgrade que aumenta a quantidade de batata por click
+	- Formatar o numero de Batatas(1000-1K, 1000000-1M...)
+Criar Api para poder salvar o progresso
