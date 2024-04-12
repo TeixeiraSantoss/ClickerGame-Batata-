@@ -1,4 +1,4 @@
-POST https://localhost:7297/api/salvar
+POST https://localhost:7297/api/salvarbatata/1
 Content-Type: application/json
 {
     "id": 1,

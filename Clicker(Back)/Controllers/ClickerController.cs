@@ -17,8 +17,8 @@ public class ClickerController : ControllerBase
     }
 
     //Metodo Salvar Batata
-    [HttpPost("salvarbatata")]
-    public async Task<IActionResult> SalvarBatata(int id, [FromBody] Batata batata){
+    [HttpPost("salvarbatata/{id}")]
+    public async Task<IActionResult> SalvarBatata([FromRoute] int id, [FromBody] Batata batata){
 
         var BatataExistente = await _ctx.Batatas.FindAsync(id);
 
@@ -33,12 +33,12 @@ public class ClickerController : ControllerBase
         //Salvar as alterações
         await _ctx.SaveChangesAsync();
 
-        return Ok("Dados Salvos");
+        return Ok(batata.qtdBatata);
     }
 
     //Metodo Salvar Upgrad
-    [HttpPost("salvarupgrade")]
-    public async Task<IActionResult> SalvarUpgrade(int id, [FromBody] Upgrade upgrade){
+    [HttpPost("salvarupgrade/{id}")]
+    public async Task<IActionResult> SalvarUpgrade([FromRoute] int id, [FromBody] Upgrade upgrade){
 
         //Alterando dados dos Upgrades
 
@@ -56,7 +56,7 @@ public class ClickerController : ControllerBase
         //Salvar as alterações
         await _ctx.SaveChangesAsync();
 
-        return Ok("Dados Salvos");
+        return Ok(upgrade);
     }
 
     //Metodo que vai enviar os dados das Batatas para o front

@@ -7,6 +7,7 @@ import { ClickerComponent } from './clicker/clicker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpgComponent } from './upg/upg.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     ClickerComponent,
     UpgComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
